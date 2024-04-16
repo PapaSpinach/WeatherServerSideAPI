@@ -62,6 +62,12 @@ main {
   border: 1px solid black;
 }
 
+#current-day-weather h2 {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
 #five-day-forecast {
   display: flex;
   gap: 20px;

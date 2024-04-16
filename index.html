@@ -24,7 +24,11 @@
 
     <section id="search-results">
       <div id="current-day-weather">
-        <h2 id="city-and-date"></h2>
+        <h2>
+          <span class="city-name"></span>
+          <span class="date"></span>
+          <img class="icon" />
+        </h2>
         <div>Temp: <span class="temp"></span></div>
         <div>Wind: <span class="wind"></span></div>
         <div>Humidity: <span class="humidity"></span></div>
@@ -33,26 +37,54 @@
       <div>
         <h3>5 Day Forecast</h3>
         <div id="five-day-forecast">
-          <!-- <div class="forecast-card">
-            <h3 class="date">9/14/2022</h3>
-            <div class="icon"></div>
+          <div class="forecast-card" id="forecast-card-0">
+            <h3 class="date"></h3>
+            <img class="icon">
             <div>Temp: <span class="temp"></span></div>
             <div>Wind: <span class="wind"></span></div>
             <div>Humidity: <span class="humidity"></span></div>
           </div>
 
-          <div class="forecast-card">
-            <h3 class="date">9/14/2022</h3>
-            <div class="icon"></div>
+          <div class="forecast-card" id="forecast-card-1">
+            <h3 class="date"></h3>
+            <img class="icon">
             <div>Temp: <span class="temp"></span></div>
             <div>Wind: <span class="wind"></span></div>
             <div>Humidity: <span class="humidity"></span></div>
-          </div> -->
+          </div>
+
+          <div class="forecast-card" id="forecast-card-2">
+            <h3 class="date"></h3>
+            <img class="icon">
+            <div>Temp: <span class="temp"></span></div>
+            <div>Wind: <span class="wind"></span></div>
+            <div>Humidity: <span class="humidity"></span></div>
+          </div>
+
+          <div class="forecast-card" id="forecast-card-3">
+            <h3 class="date"></h3>
+            <img class="icon">
+            <div>Temp: <span class="temp"></span></div>
+            <div>Wind: <span class="wind"></span></div>
+            <div>Humidity: <span class="humidity"></span></div>
+          </div>
+
+          <div class="forecast-card" id="forecast-card-4">
+            <h3 class="date"></h3>
+            <img class="icon">
+            <div>Temp: <span class="temp"></span></div>
+            <div>Wind: <span class="wind"></span></div>
+            <div>Humidity: <span class="humidity"></span></div>
+          </div>
         </div>
       </div>
     </section>
   </main>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js"
+  integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U="
+  crossorigin="anonymous"></script>
+
   <script src="script.js"></script>
 </body>
 </html>
