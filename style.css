@@ -57,6 +57,10 @@ main {
   flex-grow: 1;
 }
 
+#search-results.hidden {
+  visibility: hidden;
+}
+
 #current-day-weather {
   padding: 12px;
   border: 1px solid black;
