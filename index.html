@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Finder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Weather Dashboard</h1>
+  </header>
+  <main>
+    <aside id="search-container">
+      <h2>Search for a City</h2>
+      <input id="search" placeholder="Search">
+      <button id="search-btn" class="btn">Search</button>
+
+      <div id="search-history">
+        <!-- <button class="search-history-item btn">Atlanta</button>
+        <button class="search-history-item btn">Denver</button> -->
+      </div>
+    </aside>
+
+    <section id="search-results">
+      <div id="current-day-weather">
+        <h2 id="city-and-date"></h2>
+        <div>Temp: <span class="temp"></span></div>
+        <div>Wind: <span class="wind"></span></div>
+        <div>Humidity: <span class="humidity"></span></div>
+      </div>
+
+      <div>
+        <h3>5 Day Forecast</h3>
+        <div id="five-day-forecast">
+          <!-- <div class="forecast-card">
+            <h3 class="date">9/14/2022</h3>
+            <div class="icon"></div>
+            <div>Temp: <span class="temp"></span></div>
+            <div>Wind: <span class="wind"></span></div>
+            <div>Humidity: <span class="humidity"></span></div>
+          </div>
+
+          <div class="forecast-card">
+            <h3 class="date">9/14/2022</h3>
+            <div class="icon"></div>
+            <div>Temp: <span class="temp"></span></div>
+            <div>Wind: <span class="wind"></span></div>
+            <div>Humidity: <span class="humidity"></span></div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
