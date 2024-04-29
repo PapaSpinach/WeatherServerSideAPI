@@ -63,7 +63,7 @@ function fetchAndDisplayWeather(city) {
 
 function getCoordinatesForCity(city) {
   return fetch(
-    `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`
+    `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=1&appid=${apiKey}`
   )
     .then((res) => res.json())
     .then((data) => {
@@ -89,7 +89,7 @@ function get5DayForecast(lat, lon) {
   ];
 
   return fetch(
-    `http://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`
+    `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`
   )
     .then((res) => res.json())
     .then((data) => {
