@@ -9,6 +9,9 @@ $(function () {
 function onSearchFromInput() {
   const city = $('#search').val();
 
+  // If they didn't enter anything into the search bar, don't do anything
+  if (city === '') return;
+
   saveSearch(city);
 
   displaySearchHistory();
@@ -100,7 +103,7 @@ function get5DayForecast(lat, lon) {
       for (let i = 0; i < nextSixDays.length; i++) {
         const currentDay = nextSixDays[i];
         const item = list.find((weather) =>
-        dayjs.unix(weather.dt).isSame(currentDay, 'day')
+          dayjs.unix(weather.dt).isSame(currentDay, 'day')
         );
         dataForNextSixDays.push(item);
       }
@@ -168,6 +171,11 @@ function displaySearchHistory() {
 
 function saveSearch(city) {
   const currentSearches = getSavedSearches();
+
+  // If the city is already saved, don't save it again
+  for (let i = 0; i < currentSearches.length; i++) {
+    if (currentSearches[i] === city) return;
+  }
 
   currentSearches.push(city);
 
